@@ -12,7 +12,7 @@ export async function main(ns) {
   // ============================================
   // CONFIGURATION - UPDATE THIS URL
   // ============================================
-  const baseUrl = "https://raw.githubusercontent.com/tylersense-ui/bitburner-scripts/main";
+  const baseUrl = "https://raw.githubusercontent.com/tylersense-ui/refs/heads/main/bitburner-scripts/main";
   
   // Folder paths in your GitHub repo (scripts/ folder IS the repo root)
   const folders = {
