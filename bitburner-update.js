@@ -38,6 +38,7 @@ export async function main(ns) {
       { file: "profit-scan-flex.js", folder: folders.analysis },
       { file: "f-profit-scan-flex.js", folder: folders.analysis },
       { file: "production-monitor.js", folder: folders.analysis },
+      { file: "profit-tail.js", folder: folders.analysis },
       { file: "estimate-production.js", folder: folders.analysis }
     ],
     
@@ -76,23 +77,23 @@ export async function main(ns) {
       { file: "bladeburner-helper.js", folder: folders.bitnodes},
       { file: "corp-helper.js", folder: folders.bitnodes},
       { file: "gang-helper.js", folder: folders.bitnodes},
-      { file: "hacknet-helper.js", folder: folders.bitnodes},
+      { file: "hacknet-manager.js", folder: folders.bitnodes},
       { file: "sleeve-helper.js", folder: folders.bitnodes},
       { file: "roulette-cheat.js", folder: folders.bitnodes}
     ],
 
     ui: [
-      { file: "dashboard-rich", folder: folders.ui},
-      { file: "dashboard-v2", folder: folders.ui},
-      { file: "dashboard-v3", folder: folders.ui},
-      { file: "dashboard-v4", folder: folders.ui},
-      { file: "dashboard-v5", folder: folders.ui},
-      { file: "dashboard-v6", folder: folders.ui},
-      { file: "dashboard-v7", folder: folders.ui},
-      { file: "dashboard-v8", folder: folders.ui},
-      { file: "dashboard-v9", folder: folders.ui},
-      { file: "dashboard-v10", folder: folders.ui},
-      { file: "dashboard-v11", folder: folders.ui}
+      { file: "dashboard-rich.js", folder: folders.ui},
+      { file: "dashboard-v2.js", folder: folders.ui},
+      { file: "dashboard-v3.js", folder: folders.ui},
+      { file: "dashboard-v4.js", folder: folders.ui},
+      { file: "dashboard-v5.js", folder: folders.ui},
+      { file: "dashboard-v6.js", folder: folders.ui},
+      { file: "dashboard-v7.js", folder: folders.ui},
+      { file: "dashboard-v8.js", folder: folders.ui},
+      { file: "dashboard-v9.js", folder: folders.ui},
+      { file: "dashboard-v10.js", folder: folders.ui},
+      { file: "dashboard-v11.js", folder: folders.ui}
     ],
     
     stocks: [
