@@ -17,6 +17,8 @@ export async function main(ns) {
   // Folder paths in your GitHub repo (scripts/ folder IS the repo root)
   const folders = {
     core: { url: `${baseUrl}/core`, local: "core" },
+    ui: { url: `${baseUrl}/ui`, local: "core" },
+    bitnodes: { url: `${baseUrl}/bitnodes`, local: "core" },
     batch: { url: `${baseUrl}/batch`, local: "batch" },
     analysis: { url: `${baseUrl}/analysis`, local: "analysis" },
     utils: { url: `${baseUrl}/utils`, local: "utils" },
@@ -47,6 +49,7 @@ export async function main(ns) {
     
     analysis: [
       { file: "estimate-production.js", folder: folders.analysis },
+      { file: "profit-tail.js", folder: folders.analysis },
       { file: "f-estimate-production.js", folder: folders.analysis }
     ],
     
@@ -67,6 +70,29 @@ export async function main(ns) {
       { file: "hack-joesguns.js", folder: folders.deploy },
       { file: "hack-n00dles.js", folder: folders.deploy },
       { file: "deploy-share-all.js", folder: folders.deploy }
+    ],
+
+    bitnodes: [
+      { file: "bladeburner-helper.js", folder: folders.bitnodes},
+      { file: "corp-helper.js", folder: folders.bitnodes},
+      { file: "gang-helper.js", folder: folders.bitnodes},
+      { file: "hacknet-helper.js", folder: folders.bitnodes},
+      { file: "sleeve-helper.js", folder: folders.bitnodes},
+      { file: "roulette-cheat.js", folder: folders.bitnodes}
+    ],
+
+    ui: [
+      { file: "dashbord-rich", folder: folders.ui},
+      { file: "dashbord-v2", folder: folders.ui},
+      { file: "dashbord-v3", folder: folders.ui},
+      { file: "dashbord-v4", folder: folders.ui},
+      { file: "dashbord-v5", folder: folders.ui},
+      { file: "dashbord-v6", folder: folders.ui},
+      { file: "dashbord-v7", folder: folders.ui},
+      { file: "dashbord-v8", folder: folders.ui},
+      { file: "dashbord-v9", folder: folders.ui},
+      { file: "dashbord-v10", folder: folders.ui},
+      { file: "dashbord-v11", folder: folders.ui}
     ],
     
     stocks: [
@@ -90,6 +116,8 @@ export async function main(ns) {
   const downloadBatch = args.includes("--batch");
   const downloadDeploy = args.includes("--deploy");
   const downloadStocks = args.includes("--stocks");
+  const downloadBitnodes = args.includes("--bitnodes");
+  const downloadUi = args.includes("--ui");
 
   // Determine which files to download
   let filesToDownload = [];
@@ -98,6 +126,8 @@ export async function main(ns) {
     filesToDownload = [
       ...scripts.essential,
       ...scripts.batch,
+      ...scripts.bitnodes,
+      ...scripts.ui,
       ...scripts.analysis,
       ...scripts.utils,
       ...scripts.deploy,
@@ -106,6 +136,8 @@ export async function main(ns) {
   } else {
     if (downloadEssential) filesToDownload.push(...scripts.essential);
     if (downloadBatch) filesToDownload.push(...scripts.batch);
+    if (downloadBitnodes) filesToDownload.push(...scripts.bitnodes);
+    if (downloadUi) filesToDownload.push(...scripts.ui);
     if (downloadAnalysis) filesToDownload.push(...scripts.analysis);
     if (downloadUtils) filesToDownload.push(...scripts.utils);
     if (downloadDeploy) filesToDownload.push(...scripts.deploy);
