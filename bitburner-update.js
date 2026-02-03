@@ -17,8 +17,8 @@ export async function main(ns) {
   // Folder paths in your GitHub repo (scripts/ folder IS the repo root)
   const folders = {
     core: { url: `${baseUrl}/core`, local: "core" },
-    ui: { url: `${baseUrl}/ui`, local: "core" },
-    bitnodes: { url: `${baseUrl}/bitnodes`, local: "core" },
+    ui: { url: `${baseUrl}/ui`, local: "ui" },
+    bitnodes: { url: `${baseUrl}/bitnodes`, local: "bitnodes" },
     batch: { url: `${baseUrl}/batch`, local: "batch" },
     analysis: { url: `${baseUrl}/analysis`, local: "analysis" },
     utils: { url: `${baseUrl}/utils`, local: "utils" },
