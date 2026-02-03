@@ -82,17 +82,17 @@ export async function main(ns) {
     ],
 
     ui: [
-      { file: "dashbord-rich", folder: folders.ui},
-      { file: "dashbord-v2", folder: folders.ui},
-      { file: "dashbord-v3", folder: folders.ui},
-      { file: "dashbord-v4", folder: folders.ui},
-      { file: "dashbord-v5", folder: folders.ui},
-      { file: "dashbord-v6", folder: folders.ui},
-      { file: "dashbord-v7", folder: folders.ui},
-      { file: "dashbord-v8", folder: folders.ui},
-      { file: "dashbord-v9", folder: folders.ui},
-      { file: "dashbord-v10", folder: folders.ui},
-      { file: "dashbord-v11", folder: folders.ui}
+      { file: "dashboard-rich", folder: folders.ui},
+      { file: "dashboard-v2", folder: folders.ui},
+      { file: "dashboard-v3", folder: folders.ui},
+      { file: "dashboard-v4", folder: folders.ui},
+      { file: "dashboard-v5", folder: folders.ui},
+      { file: "dashboard-v6", folder: folders.ui},
+      { file: "dashboard-v7", folder: folders.ui},
+      { file: "dashboard-v8", folder: folders.ui},
+      { file: "dashboard-v9", folder: folders.ui},
+      { file: "dashboard-v10", folder: folders.ui},
+      { file: "dashboard-v11", folder: folders.ui}
     ],
     
     stocks: [
