@@ -1,0 +1,1 @@
+export async function main(ns){ns.disableLog('ALL');ns.tail();let l=ns.getServerMoneyAvailable('home');let t=Date.now();while(true){ns.clearLog();const n=Date.now();const m=ns.getServerMoneyAvailable('home');const r=(m-l)/Math.max((n-t)/1000,0.001);ns.print('$/s '+ns.formatNumber(r));l=m;t=n;await ns.sleep(1000);}}
