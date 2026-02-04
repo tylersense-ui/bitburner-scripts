@@ -1,1 +1,0 @@
-export async function main(ns){ns.disableLog('ALL');ns.tail();while(true){ns.clearLog();const m=ns.getServerMoneyAvailable('home');ns.print('Dashboard');ns.print('Money: '+ns.formatNumber(m));await ns.sleep(1000);}}
