@@ -1,0 +1,1 @@
+/** @param {NS} ns */ export async function main(ns){ while(true){ ns.clearLog(); ns.print('Corporation module running...'); await ns.sleep(2000); } }
