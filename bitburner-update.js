@@ -83,17 +83,12 @@ export async function main(ns) {
     ],
 
     ui: [
-      { file: "dashboard-rich.js", folder: folders.ui},
-      { file: "dashboard-v2.js", folder: folders.ui},
-      { file: "dashboard-v3.js", folder: folders.ui},
-      { file: "dashboard-v4.js", folder: folders.ui},
-      { file: "dashboard-v5.js", folder: folders.ui},
-      { file: "dashboard-v6.js", folder: folders.ui},
-      { file: "dashboard-v7.js", folder: folders.ui},
-      { file: "dashboard-v8.js", folder: folders.ui},
-      { file: "dashboard-v9.js", folder: folders.ui},
-      { file: "dashboard-v10.js", folder: folders.ui},
-      { file: "dashboard-v11.js", folder: folders.ui}
+      { file: "blade-tab.js", folder: folders.ui},
+      { file: "corp-tab.js", folder: folders.ui},
+      { file: "dashboard-v16-lite.js", folder: folders.ui},
+      { file: "gang-tab.js", folder: folders.ui},
+      { file: "hacknet-tab-v2.js", folder: folders.ui},
+      { file: "stocks-tab.js", folder: folders.ui}      
     ],
     
     stocks: [
@@ -210,3 +205,4 @@ export async function main(ns) {
 // Note: Scripts are downloaded from GitHub and organized into local folders:
 // core/, batch/, analysis/, utils/, deploy/, stocks/
 // Folders are created automatically using read/write file operations
+
